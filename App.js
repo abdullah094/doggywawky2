@@ -1,6 +1,6 @@
 
-import React,{useState} from 'react';
-import { StyleSheet,} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Dogwalkingform from './screens/DogWalkingForm';
@@ -36,182 +36,182 @@ import store from './store'
 export default function App() {
   const Stack = createNativeStackNavigator();
   const publishableKey = 'pk_test_M8AMOV5v7AxiAFB2FhBwrZ5i00LTxWA2L7'
-  
-  
 
-  
+
+
+
   return (
     <Provider store={store}>
-    <StripeProvider
-      publishableKey={publishableKey}
-    >
-    <NavigationContainer>
-    
-
-<SafeAreaProvider>
-<Stack.Navigator
-initialRouteName='Main'
->
-
-<Stack.Screen
-name='SignIn'
-component={SignIn}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='SignUpFor'
-component={SignUpfor}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='Main'
-component={Main}
-options={{
-  headerShown:false,
-}}
-/>
-
-<Stack.Screen
-name='Item'
-component={Item}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='Dogwalkingform'
-component={Dogwalkingform}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='DogDating'
-component={DogDating}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='DogGrooming'
-component={DogGrooming}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='DogShop'
-component={DogMarket}
-options={{
-  headerShown:false,
-}}
-/>
-
-<Stack.Screen
-name='DogSitting'
-component={DogSitting}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='StoreFood'
-component={StoreFood}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='DrWoof'
-component={DrWoof}
-options={{
-  headerShown:false,
-}}
-/>
-
-<Stack.Screen
-name='ItemsOpen'
-component={ItemsOpen}
-// initialParams={{ itemId: 23}}
-options={{
-  headerShown:false,
-  
-}}
-/>
-<Stack.Screen
-name='CheckoutPage'
-component={CheckoutPage}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='CartCard'
-component={CartCard}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='ThankYou'
-component={ThankYou}
-options={{
-  headerShown:false,
-}}
-/>
-<Stack.Screen
-name='PaymentScreen'
-component={PaymentScreen}
-options={{
-  headerShown:false,
-}}
+      <StripeProvider
+        publishableKey={publishableKey}
+      >
+        <NavigationContainer>
 
 
-/>
-<Stack.Screen
-name='Loop'
-component={Loop}
-options={{
-  headerShown:false,
-}}/>
+          <SafeAreaProvider>
+            <Stack.Navigator
+              initialRouteName='Main'
+            >
 
-<Stack.Screen
-name='Loading'
-component={Loading}
-options={{
-  headerShown:false,
-}}/>
-</Stack.Navigator>
-{/* <DrWoof/> */}
-{/* <CheckoutPage/> */}
-{/* <FlatlistDatajson/> */}
-{/* <SignIn/> */}
-{/* <Main/> */}
-{/* <Loop/> */}
-{/* <Loading/> */}
-{/* <HomeScreen/> */}
-{/* <StoreFood/> */}
-{/* <Dogwalkingform/> */}
-{/* <DogDating/> */}
-{/* <DogMarket/> */}
-{/* <DogGrooming/> */}
-{/* <DogSitting/> */}
-{/* <ItemsOpen/> */}
-{/* <ThankYou/> */}
-{/* <SignUp/> */}
-{/* <Dropdown/> */}
-{/* <SignUpfor/> */}
-{/* <PaymentScreen/> */}
-{/* <Item/> */} 
-{/* <CartCard/> */}
-{/* <Backbutton/> */}
-</SafeAreaProvider>
-</NavigationContainer>
-</StripeProvider>
-</Provider>
-    );
+              <Stack.Screen
+                name='SignIn'
+                component={SignIn}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='SignUpFor'
+                component={SignUpfor}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='Main'
+                component={Main}
+                options={{
+                  headerShown: false,
+                }}
+              />
+
+              <Stack.Screen
+                name='Item'
+                component={Item}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='Dogwalkingform'
+                component={Dogwalkingform}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='DogDating'
+                component={DogDating}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='DogGrooming'
+                component={DogGrooming}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='DogShop'
+                component={DogMarket}
+                options={{
+                  headerShown: false,
+                }}
+              />
+
+              <Stack.Screen
+                name='DogSitting'
+                component={DogSitting}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='StoreFood'
+                component={StoreFood}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='DrWoof'
+                component={DrWoof}
+                options={{
+                  headerShown: false,
+                }}
+              />
+
+              <Stack.Screen
+                name='ItemsOpen'
+                component={ItemsOpen}
+                // initialParams={{ itemId: 23}}
+                options={{
+                  headerShown: false,
+
+                }}
+              />
+              <Stack.Screen
+                name='CheckoutPage'
+                component={CheckoutPage}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='CartCard'
+                component={CartCard}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='ThankYou'
+                component={ThankYou}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name='PaymentScreen'
+                component={PaymentScreen}
+                options={{
+                  headerShown: false,
+                }}
+
+
+              />
+              <Stack.Screen
+                name='Loop'
+                component={Loop}
+                options={{
+                  headerShown: false,
+                }} />
+
+              <Stack.Screen
+                name='Loading'
+                component={Loading}
+                options={{
+                  headerShown: false,
+                }} />
+            </Stack.Navigator>
+            {/* <DrWoof/> */}
+            {/* <CheckoutPage/> */}
+            {/* <FlatlistDatajson/> */}
+            {/* <SignIn/> */}
+            {/* <Main/> */}
+            {/* <Loop/> */}
+            {/* <Loading/> */}
+            {/* <HomeScreen/> */}
+            {/* <StoreFood/> */}
+            {/* <Dogwalkingform/> */}
+            {/* <DogDating/> */}
+            {/* <DogMarket/> */}
+            {/* <DogGrooming/> */}
+            {/* <DogSitting/> */}
+            {/* <ItemsOpen/> */}
+            {/* <ThankYou/> */}
+            {/* <SignUp/> */}
+            {/* <Dropdown/> */}
+            {/* <SignUpfor/> */}
+            {/* <PaymentScreen/> */}
+            {/* <Item/> */}
+            {/* <CartCard/> */}
+            {/* <Backbutton/> */}
+          </SafeAreaProvider>
+        </NavigationContainer>
+      </StripeProvider>
+    </Provider>
+  );
 }
